@@ -1,156 +1,148 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="myCSS1.css">
-    <title>12 Types of Flowers</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-image: url('garden.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            color: white;
-        }
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>My Flower Gallery</title>
+        <style>
+            body {
+                background-color: #FFF0F5; 
+                font-family: Arial, sans-serif;
+                color: #660000;
+            }
 
-        h1, h2 {
-            color: #ffffff;
-            text-shadow: 2px 2px 4px #000000;
-        }
+            table {
+                background-color: white;
+                border-collapse: collapse;
+            }
 
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-        }
+            td {
+                padding: 10px;
+                text-align: center;
+            }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
+            h1 {
+                text-shadow: 2px 2px #fff;
+            }
 
-        td {
-            padding: 15px;
-            text-align: center;
-            vertical-align: top;
-        }
+            font[size="6"] {
+                font-weight: bold;
+            }
 
-        img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
+            /* Tabs styling */
+            #tabsI ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                background-color: #333;
+                border-radius: 5px;
+                overflow: hidden;
+            }
 
-        img:hover {
-            transform: scale(1.05);
-        }
+            #tabsI ul li {
+                margin: 0;
+            }
 
-        .flower-name {
-            margin-top: 10px;
-            font-size: 18px;
-            font-weight: bold;
-        }
+            #tabsI ul li a {
+                display: block;
+                color: white;
+                padding: 12px 20px;
+                text-decoration: none;
+                transition: background-color 0.3s;
+            }
 
-        .profile-section {
-            text-align: center;
-            padding-top: 20px;
-        }
+            #tabsI ul li a:hover {
+                background-color: #555;
+            }
 
-        .profile-img {
-            margin-top: 10px;
-            border-radius: 15px;
-            width: 250px;
-            height: auto;
-            border: 3px solid #ffffff;
-        }
+            #tabsI ul li#current a {
+                background-color: red;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align:center;">
+            <font color="red" size="10">My Flower Gallery</font>
+        </h1>
 
-        hr {
-            border: 1px solid white;
-            margin: 30px 0;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1 style="text-align: center;">12 DIFFERENT TYPES OF FLOWERS</h1>
-        <table>
-            <tr>
-                <td>
-						      <div id="tabsI">
-                                <ul>
-                                        <!-- CSS Tabs -->
-<li id="current"><a href="MyMain.html"><span>Home</span></a></li>
-<li><a href="FISHES Act1.html"><span>Fishes</span></a></li>
-<li id= "current"><a href="My Flower Gallery.html"><span>Flowers</span></a></li>
-<li><a href="Support.html"><span>Trees</span></a></li>
-<li><a href="Order.html"><span>Order</span></a></li>
-<li><a href="News.html"><span>News</span></a></li>
-<li><a href="About.html"><span>About</span></a></li>
+        <div id="tabsI">
+            <ul>
+                <li><a href="MyMain.html"><span>Home</span></a></li>
+                <li><a href="FISHES Act1.html"><span>Fishes</span></a></li>
+                <li id="current"><a href="Flowers.html"><span>Flowers</span></a></li>
+                <li><a href="trees.html"><span>Trees</span></a></li>
+                <li><a href="resorts.html"><span>Resorts</span></a></li>
+                <li><a href="animals.html"><span>Animals</span></a></li>
+                <li><a href="fruits.html"><span>Fruits</span></a></li>
+                <li><a href="About.html"><span>About</span></a></li>
+            </ul>
+        </div>
 
-                                </ul>
-                        </div>
-                    <img src="rose.jpg" alt="Rose">
-                    <div class="flower-name">Rose</div>
-                </td>
-                <td>
-                    <img src="tulips.jpg" alt="Tulips">
-                    <div class="flower-name">Tulips</div>
-                </td>
-                <td>
-                    <img src="lily.jpg" alt="Lily">
-                    <div class="flower-name">Lily</div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="sunflower.jpg" alt="Sunflower">
-                    <div class="flower-name">Sunflower</div>
-                </td>
-                <td>
-                    <img src="orchid.jpg" alt="Orchid">
-                    <div class="flower-name">Orchid</div>
-                </td>
-                <td>
-                    <img src="daffodil.jpg" alt="Daffodil">
-                    <div class="flower-name">Daffodil</div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="daisy.jpg" alt="Daisy">
-                    <div class="flower-name">Daisy</div>
-                </td>
-                <td>
-                    <img src="marigold.jpg" alt="Marigold">
-                    <div class="flower-name">Marigold</div>
-                </td>
-                <td>
-                    <img src="peony.jpg" alt="Peony">
-                    <div class="flower-name">Peony</div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="carnation.jpg" alt="Carnation">
-                    <div class="flower-name">Carnation</div>
-                </td>
-                <td>
-                    <img src="chrysanthemum.jpg" alt="Chrysanthemum">
-                    <div class="flower-name">Chrysanthemum</div>
-                </td>
-                <td>
-                    <img src="Lavander.jpg" alt="Lavender">
-                    <div class="flower-name">Lavender</div>
-                </td>
-            </tr>
-        </table>
-
-       
-</body>
-</html>
+        <center>
+            <table border="1" width="1000">
+                <tr>
+                    <td>
+                        <img src="Rose.jpg" width="300" height="300" alt="Rose"><br>
+                        <font size="6">Rose</font>
+                    </td>
+                    <td>
+                        <img src="Tulips.jpg" width="300" height="300" alt="Tulip"><br>
+                        <font size="6">Tulip</font>
+                    </td>
+                    <td>
+                        <img src="Lily.jpg" width="300" height="300" alt="Lily"><br>
+                        <font size="6">Lily</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Sunflower.jpg" width="300" height="300" alt="Sunflower"><br>
+                        <font size="6">Sunflower</font>
+                    </td>
+                    <td>
+                        <img src="Orchid.jpg" width="300" height="300" alt="Orchid"><br>
+                        <font size="6">Orchid</font>
+                    </td>
+                    <td>
+                        <img src="Daffodil.jpg" width="300" height="300" alt="Daffodil"><br>
+                        <font size="6">Daffodil</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Marigold.jpg" width="300" height="300" alt="Marigold"><br>
+                        <font size="6">Marigold</font>
+                    </td>
+                    <td>
+                        <img src="Daisy.jpg" width="300" height="300" alt="Daisy"><br>
+                        <font size="6">Daisy</font>
+                    </td>
+                    <td>
+                        <img src="Lavander.jpg" width="300" height="300" alt="Lavender"><br>
+                        <font size="6">Lavender</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Carnation.jpg" width="300" height="300" alt="Carnation"><br>
+                        <font size="6">Carnation</font>
+                    </td>
+                    <td>
+                        <img src="Peony.jpg" width="300" height="300" alt="Peony"><br>
+                        <font size="6">Peony</font>
+                    </td>
+                    <td>
+                        <img src="Chrysanthemum.jpg" width="300" height="300" alt="Chrysanthemum"><br>
+                        <font size="6">Chrysanthemum</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <center><font color="red" size="10">Created by: De Guzman, Tobit B.</font></center>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+    </html>
