@@ -3,89 +3,143 @@
 <head>
     <title>12 Different Types of Fishes</title>
     <link rel="stylesheet" href="myCSS1.css">
+    <style>
+        body {
+            background-image: url('sea.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            background-color: rgba(0, 0, 50, 0.6);
+            color: white;
+            border-collapse: collapse;
+            width: 1000px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        #tabsI ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #003366;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        #tabsI ul li {
+            margin: 0;
+        }
+
+        #tabsI ul li a {
+            display: block;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        #tabsI ul li a:hover {
+            background-color: #005599;
+        }
+
+        #tabsI ul li#current a {
+            background-color: red;
+        }
+
+        h2 {
+            color: #00ccff;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-<body style="background-image: url('sea.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
-<center>
-    <table border="1" width="1000" height="600">
-        <tr height="100">
-            <td colspan="3">
-                <div id="tabsI">
-                    <ul>
-                        <!-- CSS Tabs -->
-                        <li><a href="MyMain.html"><span>Home</span></a></li>
-                        <li id="current"><a href="FISHES Act1.html"><span>Fishes</span></a></li>
-                        <li><a href="My Flower Gallery.html"><span>Flowers</span></a></li>
-                        <li><a href="Support.html"><span>Trees</span></a></li>
-                        <li><a href="Order.html"><span>Order</span></a></li>
-                        <li><a href="News.html"><span>News</span></a></li>
-                        <li><a href="About.html"><span>About</span></a></li>
-                    </ul>
-                </div>
-                <center><font color="BLUE" size="+3"><b>12 DIFFERENT TYPES OF FISHES</b></font></center>
-            </td>
-        </tr>
+<body>
+    <center>
+        <!-- Navigation Tabs -->
+        <div id="tabsI">
+            <ul>
+                <li><a href="MyMain.html"><span>Home</span></a></li>
+                <li id="current"><a href="FISHES Act1.html"><span>Fishes</span></a></li>
+                <li><a href="Flowers.html"><span>Flowers</span></a></li>
+                <li><a href="trees.html"><span>Trees</span></a></li>
+                <li><a href="resorts.html"><span>Resorts</span></a></li>
+                <li><a href="animals.html"><span>Animals</span></a></li>
+                <li><a href="fruits.html"><span>Fruits</span></a></li>
+                <li><a href="About.html"><span>About</span></a></li>
+            </ul>
+        </div>
 
-        <tr height="400">
-            <td width="333">
-                <img src="angel.jpg" width="333" height="300" alt="Angel Fish"><br>
-                <center><font color="white">Angel Fish</font></center>
-            </td>
-            <td width="333">
-                <img src="betta.jpg" width="333" height="300" alt="Betta Fish"><br>
-                <center><font color="white">Betta Fish</font></center>
-            </td>
-            <td width="333">
-                <img src="catfish.jpg" width="333" height="300" alt="Catfish"><br>
-                <center><font color="white">Catfish</font></center>
-            </td>
-        </tr>
+        <!-- Page Heading -->
+       <h2 style="color: darkblue;"><b>12 DIFFERENT TYPES OF FISHES</b></h2>
 
-        <tr height="400">
-            <td width="333">
-                <img src="clownfish.jpg" width="333" height="300" alt="Clownfish"><br>
-                <center><font color="white">Clownfish</font></center>
-            </td>
-            <td width="333">
-                <img src="discus.jpg" width="333" height="300" alt="Discus"><br>
-                <center><font color="white">Discus</font></center>
-            </td>
-            <td width="333">
-                <img src="goldfish.jpg" width="333" height="300" alt="Goldfish"><br>
-                <center><font color="white">Goldfish</font></center>
-            </td>
-        </tr>
 
-        <tr height="400">
-            <td width="333">
-                <img src="guppy.jpg" width="333" height="300" alt="Guppy"><br>
-                <center><font color="white">Guppy</font></center>
-            </td>
-            <td width="333">
-                <img src="pufferfish.jpg" width="333" height="300" alt="Pufferfish"><br>
-                <center><font color="white">Pufferfish</font></center>
-            </td>
-            <td width="333">
-                <img src="salmon.jpg" width="333" height="300" alt="Salmon"><br>
-                <center><font color="white">Salmon</font></center>
-            </td>
-        </tr>
-
-        <tr height="400">
-            <td width="333">
-                <img src="swordfish.jpg" width="333" height="300" alt="Swordfish"><br>
-                <center><font color="white">Swordfish</font></center>
-            </td>
-            <td width="333">
-                <img src="tuna.jpg" width="333" height="300" alt="Tuna"><br>
-                <center><font color="white">Tuna</font></center>
-            </td>
-            <td width="333">
-                <img src="zebra.jpg" width="333" height="300" alt="Zebra Fish"><br>
-                <center><font color="white">Zebra Fish</font></center>
-            </td>
-        </tr>
-
-    
-</center>
+        <!-- Fish Image Table -->
+        <table border="1">
+            <tr>
+                <td>
+                    <img src="angel.jpg" width="300" height="200" alt="Angel Fish"><br>
+                    Angel Fish
+                </td>
+                <td>
+                    <img src="betta.jpg" width="300" height="200" alt="Betta Fish"><br>
+                    Betta Fish
+                </td>
+                <td>
+                    <img src="catfish.jpg" width="300" height="200" alt="Catfish"><br>
+                    Catfish
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="clownfish.jpg" width="300" height="200" alt="Clownfish"><br>
+                    Clownfish
+                </td>
+                <td>
+                    <img src="discus.jpg" width="300" height="200" alt="Discus"><br>
+                    Discus
+                </td>
+                <td>
+                    <img src="goldfish.jpg" width="300" height="200" alt="Goldfish"><br>
+                    Goldfish
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="guppy.jpg" width="300" height="200" alt="Guppy"><br>
+                    Guppy
+                </td>
+                <td>
+                    <img src="pufferfish.jpg" width="300" height="200" alt="Pufferfish"><br>
+                    Pufferfish
+                </td>
+                <td>
+                    <img src="salmon.jpg" width="300" height="200" alt="Salmon"><br>
+                    Salmon
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="swordfish.jpg" width="300" height="200" alt="Swordfish"><br>
+                    Swordfish
+                </td>
+                <td>
+                    <img src="tuna.jpg" width="300" height="200" alt="Tuna"><br>
+                    Tuna
+                </td>
+                <td>
+                    <img src="zebra.jpg" width="300" height="200" alt="Zebra Fish"><br>
+                    Zebra Fish
+                </td>
+            </tr>
+        </table>
+    </center>
 </body>
 </html>
